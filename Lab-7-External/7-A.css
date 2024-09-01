@@ -1,0 +1,43 @@
+
+fieldset{
+    background-color: rgb(58, 194, 252);
+}
+.Header{
+    background-color: rgb(70, 3, 133);
+    
+}
+.Content{
+    background-color: rgb(242, 159, 3);
+    height: 45vh;
+    padding-left: 19px;
+}
+.Entry{
+    background-color: black;
+    width: 55%;
+    float: left;
+    margin-right: 10%;
+    
+}
+.Entry1,.HeaderText,.Footer{
+    color: white;
+}
+.Sidebar{
+    background-color: black;
+    width: 35%;
+    float: right;
+    height: 25vh;
+    position: absolute;
+    margin-left: 120vh;
+    margin-top: 1vh;
+}
+.Space{
+        width: 100%;
+        float: left;
+        height: 5px;
+}
+.SidebarText{
+    color: white;   
+}
+.Footer{
+    background-color: blue;
+}
