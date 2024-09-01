@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+     
+        body{
+            background-color: darkblue;
+        }
+
+        .container{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1rem;
+            padding-left: 50px;
+            /* margin-left: 50px; */
+        }
+        .box1,.box2,.box3,.box4,.box5,.box6,.box7,.box8,.box9,.box10,.box11,.box12,.box13,.box14,.box15{
+            width: 230px;
+            height: 145px;
+            border: 2px solid black;
+            padding: 2rem;
+            background-color: antiquewhite;
+            border-radius: 9px;
+            margin-top: 15px;
+        }
+        .box1,.box4,.box7,.box10,.box13{
+            /* margin-left: 90px; */
+            margin-top: 15px;
+        }
+        .box1{
+            background-image: linear-gradient(130deg,rgb(129, 255, 83,0.7),rgb(52, 194, 250),rgb(248, 133, 172));
+        }
+        .box2{
+            background-image: linear-gradient(180deg,#43a9df,#75cdc6);
+        }
+        .box3{
+            background-image: linear-gradient(150deg,#f6b965,#7d54c7);
+        }
+        .box4{
+            background-image: linear-gradient(50deg,#fc9bad,#fb596f);
+        }
+        .box5{
+            background-image: linear-gradient(150deg,#9192fa,#dbb4fe,#f7a7d6);
+        }
+        .box6{
+            background-image: linear-gradient(10deg,#ee8730,#dd2629,#da3db0);
+        }
+        .box7{
+            background-image: linear-gradient(140deg,#f03aad,#7c4ba4,#3781c0);
+        }
+        .box8{
+            background-image: linear-gradient(130deg,#ecbb1f,#ffe04f,#fff2ad);
+        }
+        .box9{
+            background-image: linear-gradient(130deg,#fe8ba2,#fb6480,#feaca7);
+        }
+        .box10{
+            background-image: linear-gradient(150deg,#f8f093,#baf5cd,#92edba);
+        }
+        .box11{
+            background-image: linear-gradient(90deg,#fcf0d2,#fdbfc0,#cad0f5);
+        }
+        .box12{
+            background-image: linear-gradient(180deg,#ec4883,#ed4940,#edab1d);
+        }
+        .box13{
+            background-image: linear-gradient(50deg,#fff7e7,#6a959f);
+        }
+        .box14{
+            background-image: linear-gradient(50deg,#e98f67,#8e3cb9,#374881);
+        }
+        .box15{
+            background-image: linear-gradient(50deg,#3ed880,#3191b0,#525ac7);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box1"></div>
+        <div class="box2"></div>
+        <div class="box3"></div>
+        <div class="box4"></div>
+        <div class="box5"></div>
+        <div class="box6"></div>
+        <div class="box7"></div>
+        <div class="box8"></div>
+        <div class="box9"></div>
+        <div class="box10"></div>
+        <div class="box11"></div>
+        <div class="box12"></div>
+        <div class="box13"></div>
+        <div class="box14"></div>
+        <div class="box15"></div>
+    </div>
+</body>
+</html>

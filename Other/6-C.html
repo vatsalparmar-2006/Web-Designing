@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .row1,.row3{
+            width: 550px;
+            background-color: black;
+            height: 30px;
+            margin-bottom: 5px;
+        }
+        .box{
+            margin-left: 80px;
+        }
+        .boxrow1{
+            height: 50px;
+            background-color: brown;
+            margin-bottom: 3px;
+            width: 400px;
+        }
+        .boxrow2{
+            height: 227px;
+            margin-bottom: 0px;
+        }
+        .nevigation{
+            height: 220px;
+            background-color: blue;
+            width: 80px;
+            margin-right: 6px;
+            float: left;            
+        }
+        .contentup{
+            height: 150px;
+            background-color: yellow;
+            width: 220px;
+            /* margin-left: 2px; */
+            /* float: left; */
+        }
+        .contentdown{
+            background-color: yellow;
+            height: 70px;
+            width: 315px;
+            /* margin-left: 2px; */
+            float: left;
+        }
+        .yellow{
+            float: left;
+            margin-right: 2px;
+        }
+        .green{
+            background-color: green;
+            height: 147px;
+            width: 90px;
+            margin-left: 310px;
+        }
+        .boxrow3{
+            height: 50px;
+            background-color: rgb(7, 216, 231);
+            margin-bottom: 8px;
+            width: 402px;
+        }
+      
+    
+    </style>
+</head>
+<body>
+    <div>
+        <div class="row1"></div>
+        <div class="row2">
+            <div class="box">
+                <div class="boxrow1">
+                    <label style="position: relative; top: 13px; left: 184px; color: azure;"><b>Header</b></label>
+                </div>
+                <div class="boxrow2">
+                    <div class="nevigation">
+                        <label style="position: relative; top: 100px; left: 3px; color: azure;"><b>Nevigation</b></label>
+                    </div>
+                    <div class="yellow">
+                        <div class="contentup">
+                            <label style="position: relative; top: 90px; left: 90px;"><b>Content</b></label>
+                        </div>
+                        <div class="contentdown">
+                        </div>
+                    </div>
+                    <div class="green">
+                        <p align="center" style="position: absolute; top: 145px; left: 418px; color: azure;"><b>Sidebar</b></p>
+                    </div>
+                </div>
+                <div class="boxrow3">
+                    <label style="position: relative; top: 13px; left: 184px; color: azure;"><b>Footer</b></label>
+                </div>
+            </div>
+        </div>
+        <div class="row3"></div>
+    </div>
+</body>
+</html>

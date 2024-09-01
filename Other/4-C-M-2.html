@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Create Account</title>
+</head>
+<body>
+    <fieldset>
+        <form action="01.html" method="post"></form>
+        <table  width="50%" cellspacing="5" cellpadding="2">
+            <tr>
+                <th colspan="2"> <h4>Create Account</h4></th>
+            </tr>
+            <tr>
+                <td colspan="2"> <hr></td>
+            </tr>
+            <tr>
+                <td style="color: aqua;"><label> First name*</label></td>
+                <td style="color: aqua;"><label> Last name </label></td> 
+            </tr>
+            <tr>
+                <td><input type="text" placeholder="enter your First name"></td>
+                <td><input type="text" placeholder="enter your last name"></td>
+            </tr>
+            <tr>
+                <td style="color: aqua;"><label> Email*</label></td>
+            </tr>
+            <tr>
+                <td colspan="2"><input type="email" placeholder="enter your email"></td>
+            </tr>
+            <tr>
+                <td style="color: aqua;" ><label> Password*</label></td>
+                <td  style="color: aqua;"><label> Confirm Password* </label></td> 
+            </tr>
+            <tr>
+                <td><input type="password" placeholder="enter your password"></td>
+                <td><input type="password" placeholder="enter your password again"></td>
+            </tr>
+            <tr>
+                <td style="color: aqua;" ><label> Gender</label></td>
+                <td style="color: aqua;" ><label> Hobbies </label></td> 
+            </tr>
+            <tr >
+                <td><input type="radio" name="gender">Male 
+                    <input type="radio" name="gender">Female    
+                </td>
+                <td> <input type="checkbox" name="Hobbies">Music
+                     <input type="checkbox" name="Hobbies">Sports
+                    <input type="checkbox" name="Hobbies">travel
+                     <input type="checkbox" name="Hobbies">Movies
+                </td>
+            </tr>
+                
+            <tr>
+                
+                <td style="color: aqua;"><label>Source of Income</label></td>
+                <td style="color: aqua;"><label> Income </label></td>
+            </tr>
+            <tr>
+                <td><select name="Income" >
+                    <!-- <option selected disabled>Choose Degree</option> -->
+                    <option value="Income">Employed</option>
+                    <option value="Income">Business</option>
+                    <option value="Income">Start up</option>
+                    <option value="Income">Social Service</option>
+                 </select>
+                </td>
+                <td style="color: aqua;"> <input type="range" name="Income" oninput="this.nextElementSibling.value = this.value">
+                <output>20</output>k
+                </td>
+            </tr>
+            <tr>
+                <td style="color: aqua;"><label>Upload Profile Picture</label></td>
+                <td style="color: aqua;"><label> Age</label></td>
+            </tr>
+            <tr>
+                <td> <input type="file" ></td>
+                <td> <input type="num" min="0" max="110" value="18"></td>
+            </tr>
+            <tr>
+                <td style="color: aqua;"><label> Bio </label></td>
+            </tr>
+            <tr>
+                <td colspan="2"> <textarea  cols="60" rows="5"></textarea></td>
+            </tr>
+            <tr>
+                <td colspan="2"> <hr></td>
+            </tr>
+            <tr align="center">
+                <td> </td>
+                <td> <input type="submit" value="Create"></td>
+            </tr>
+        </table>
+    </fieldset>
+</body>
+</html>

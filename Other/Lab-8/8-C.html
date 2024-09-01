@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .head {
+            height: 50px;
+            background-color: rgb(174, 116, 228);
+        }
+
+        .a {
+            float: left;
+        }
+
+        .aleatexthead {
+            float: left;
+            color: white;
+            position: relative;
+            left: 3px;
+            bottom: 17px;
+            font-size: 23px;
+
+        }
+
+        .statustext1 {
+            margin-left: 45px;
+            float: right;
+            margin-right: 90px;
+            color: white;
+            font-weight: 600;
+            margin-top: 8px;
+            border-radius: 18px;
+            height: 33px;
+            background-color: rgb(174, 116, 228);
+            text-align: center;
+            width: 105px;
+        }
+
+        .statustext {
+            margin-left: 45px;
+            float: right;
+            color: white;
+            font-weight: 600;
+            background-color: rgb(174, 116, 228);
+            text-align: center;
+            width: 105px;
+            margin-top: 8px;
+            border-radius: 18px;
+            height: 33px;
+
+        }
+
+        .statusbartext{
+            position: relative;
+            top: 8px;
+        }
+
+        .alea {
+            height: 390px;
+        }
+
+        .linkdin {
+            background-color: rgb(0, 40, 61);
+            height: 75px;
+        }
+
+        .aleatext1 {
+            font-weight: 800;
+            font-size: 25px;
+            margin-top: 30px;
+            margin-left: 415px;
+            margin-bottom: 0px;
+        }
+
+        .aleatext2 {
+            font-weight: 800;
+            font-size: 25px;
+            margin-top: 2px;
+            margin-left: 459px;
+        }
+
+        .highlight {
+            color: blueviolet;
+        }
+
+        .ui {
+            height: 50px;
+            width: 180px;
+            background-color: blueviolet;
+            color: white;
+            font-weight: 600;
+            text-align: center;
+            padding: 5px;
+            border-radius: 25px;
+            box-shadow: 2px 3px 25px black;
+            margin-left: 380px;
+            z-index: -1;
+        }
+
+        .uitext {
+            font-size: 18px;
+        }
+
+        #yeartext {
+            font-size: 13px;
+            margin-top: 4px;
+        }
+
+        .aleaimg {
+            height: 305px;
+            width: 186px;
+            margin-top: -86px;
+            margin-left: 590px;
+            background-color: rgb(174, 116, 228);
+            border-radius: 200px;
+            z-index: 2;
+            background-image: url(https://newsletterhub.liquid-themes.com/staging/wp-content/uploads/2019/11/Image-3@2x.png);
+            background-position: center;
+            background-size: cover;
+            position: relative;
+            box-shadow: inset 1px 1px 80px rgb(49, 49, 49),
+                inset -1px -1px 80px rgb(69, 69, 69);
+        }
+
+        .net {
+            margin-top: -286px;
+            margin-left: 656px;
+            position: absolute;
+            z-index: 1;
+        }
+
+        .web {
+            height: 50px;
+            width: 180px;
+            background-color: blueviolet;
+            color: white;
+            font-weight: 600;
+            text-align: center;
+            padding: 5px;
+            border-radius: 25px;
+            box-shadow: 2px 3px 25px black;
+            margin-left: 840px;
+            margin-top: -59px;
+        }
+
+        .img1 {
+            float: left;
+            margin-left: 160px;
+            margin-top: -30px;
+        }
+
+        .img2 {
+            float: left;
+            margin-left: 110px;
+        }
+
+        .about {
+            height: 310px;
+            background-color: rgb(174, 116, 228);
+        }
+
+        .abouttext {
+            color: white;
+            font-size: 65px;
+            font-weight: 600;
+            float: left;
+            margin-left: -850px;
+            margin-top: 55px;
+        }
+
+        .metext {
+            color: white;
+            font-size: 65px;
+            font-weight: 600;
+            float: left;
+            margin-left: -850px;
+            margin-top: 125px;
+        }
+
+        .paratext {
+            float: right;
+            color: white;
+            font-size: 18px;
+            line-height: 1.7;
+            margin-top: 13px;
+            margin-right: 40px;
+            word-spacing: 4px;
+            font-weight: 100;
+        }
+
+        .box1 {
+            float: left;
+            height: 80px;
+            width: 80px;
+            border-radius: 17px;
+            font-size: 40px;
+            color: white;
+            text-align: center;
+            padding-top: 18px;
+            font-weight: 600;
+            margin-left: 85px;
+            margin-top: 180px;
+            background: blueviolet;
+            box-shadow: 0 8px 8px -4px rgb(5, 5, 5);
+        }
+        .box1text,.box2text,.box3text{
+            font-size: 22px;
+            color: white;
+            float: left;
+            font-weight: 600;
+            margin-top: 197px;
+            margin-left: 8px;
+        }
+        .box2,.box3{
+            float: left;
+            height: 80px;
+            width: 80px;
+            border-radius: 17px;
+            font-size: 40px;
+            color: white;
+            text-align: center;
+            padding-top: 18px;
+            font-weight: 600;
+            margin-left: 298px;
+            margin-top: 180px;
+            background: blueviolet;
+            box-shadow: 0 8px 8px -4px rgb(5, 5, 5);
+        }
+        .box3{
+            margin-left: 348px;
+            margin-top: 14px;
+        }
+        .box3text{
+            margin-top: 29px;
+        }
+
+        .statustext1:hover{
+            /* box-shadow: 0 5px 5px -4px rgb(5, 5, 5); */
+            background: blueviolet;
+            box-shadow: 2px 3px 25px black;
+        }
+        .statustext:hover{
+            /* box-shadow: 0 5px 5px -4px rgb(5, 5, 5); */
+            background: blueviolet;
+            box-shadow: 2px 3px 3px black;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="head">
+        <div class="a">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Eo_circle_purple_white_letter-y.svg/2048px-Eo_circle_purple_white_letter-y.svg.png"
+                height="45px" width="45px" style="margin: 3px; margin-left: 55px;">
+        </div>
+        <div class="aleatexthead">
+            <h5>Alea</h5>
+        </div>
+        <div>
+            <div class="statustext1">
+                <span class="statusbartext">Let's Talk</span>
+            </div>
+            <div class="statustext">
+                <span class="statusbartext">Services</span>
+            </div>
+            <div class="statustext">
+                <span class="statusbartext">About</span>
+            </div>
+            <div class="statustext">
+                <span class="statusbartext">Home</span>
+            </div>
+        </div>
+    </div>
+    <div class="alea">
+        <div>
+            <h5 class="aleatext1">I'm <span class="highlight">Alea</span>. I will create a web design that</h5>
+            <h5 class="aleatext2">can give value to your company</h5>
+        </div>
+        <div>
+            <div class="ui">
+                <div class="uitext">UI/UX Designer</div>
+                <div id="yeartext">4 Years</div>
+            </div>
+            <div class="aleaimg">
+
+                <!-- <img src="https://newsletterhub.liquid-themes.com/staging/wp-content/uploads/2019/11/Image-3@2x.png"
+                    width="186px" height="206" style="margin-top: 100px; "> -->
+            </div>
+            <div class="net">
+                <img src="net-type.png" alt="">
+            </div>
+            <div class="web">
+                <div class="uitext">Web Developer</div>
+                <div class="yeartext">2 Years</div>
+            </div>
+        </div>
+    </div>
+    <div class="linkdin">
+        <div class="img1">
+            <img src="dribble.png" height="130px">
+        </div>
+        <div class="img2">
+            <img src="linkedin.png" height="130px" style="margin-top: -30px;">
+        </div>
+        <div class="img2">
+            <img src="medium.png" height="140px" style="margin-top: -35px;">
+        </div>
+        <div class="img2">
+            <img src="behance.png" height="50px" style="margin-top: 8px;">
+        </div>
+    </div>
+    <div class="about">
+        <div class="abouttext">
+            About
+        </div>
+        <div class="metext">
+            Me.
+        </div>
+        <div class="paratext">
+            Lorem ipsum, dolor sit amet consectetur adipisicing <br> elit. Beatae aliquam cupiditate quod rem eius <br>
+            eum fugiat ea optio veritatis dolore quibusdam <br> recusandae itaque, velit delectus nesciunt! <br>
+            Expedita ipsum voluptates rem?
+        </div>
+        <div class="boxes">
+            <div class="box1">
+                4K
+            </div>
+            <div class="box1text">
+                Projects
+                <br>
+                Done
+            </div>
+            <div class="box2">
+                2K
+            </div>
+            <div class="box2text">
+                Happy
+                <br>
+                Clients
+            </div>
+            <div class="box3">
+                9K
+            </div>
+            <div class="box3text">
+                Clients on
+                <br>
+                Worldwide
+            </div>
+        </div>
+    </div>
+</body>
+</html>

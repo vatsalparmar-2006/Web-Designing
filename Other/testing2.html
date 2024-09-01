@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #000000;
+        margin: auto;
+    }
+
+    .circle-container{
+        position: relative;
+        align-items: center;
+        justify-content: center;
+        /* margin: auto; */
+    }
+    .circle {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        /* background-color: transparent; */
+        border: 40px solid rgb(137, 0, 211);
+        position: absolute;
+        animation: radiation 5s infinite linear;
+    }
+
+    .circle:nth-child(2) {
+        animation-delay: 2s; /* Delay for the second circle */
+    }
+
+    .circle:nth-child(3) {
+        animation-delay: 3s; /* Delay for the third circle */
+    }
+
+    .circle:nth-child(4) {
+        animation-delay: 4s; /* Delay for the third circle */
+    }
+
+    @keyframes radiation {
+        0% {
+            transform: scale(0.1);
+            filter: hue-rotate(0deg);
+            /* border-color: rgba(255, 0, 0, 0.5); */
+        }
+        
+        100% {
+            transform: scale(2.2);
+            /* border-color: rgba(255, 0, 0, 0); */
+            filter: hue-rotate(360deg);
+        }
+    }
+
+</style>
+</head>
+<body>
+    <div class="circle-container">
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+    </div>
+</body>
+</html>
